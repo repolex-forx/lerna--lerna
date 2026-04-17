@@ -1,0 +1,154 @@
+[2026-04-17T14:24:39Z] === ENRICH ITERATION 1 START | repo=lerna/lerna sha=4322536e ===
+[2026-04-17T14:24:39Z] [iter=1] PHASE START: enrich repo=lerna/lerna sha=4322536e runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/4322536e-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/4322536e385c067afe743c089430dd5cfe35d010.nq.gz
+[2026-04-17T14:25:58Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=81 MB
+[2026-04-17T14:26:10Z] [iter=1] AST store loaded triples=1716712 load_secs=11 mem_mb=919 MB
+[2026-04-17T14:26:10Z] [iter=1] Step 2: Finding LSP targets mem_mb=919 MB
+[2026-04-17T14:26:12Z] [iter=1] LSP targets found call_sites=19319 imports=1201 extends=47 implements=1 secs=2
+[2026-04-17T14:26:13Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=919 MB
+[2026-04-17T14:26:23Z] [iter=1] Position index built positions=117108 nodes_with_types=140779 secs=10 mem_mb=919 MB
+[2026-04-17T14:26:23Z] [iter=1] Step 3: Starting LSP resolution mem_mb=919 MB already_completed_types=[] already_completed_files=0
+[2026-04-17T14:26:23Z] [iter=1] Resolving target type target_type=call_site count=19319
+[2026-04-17T14:26:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=0 resolved=0 errors=0 current=libs/core/src/lib/conventional-commits/recommend-version.ts
+[2026-04-17T14:27:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=2 resolved=3 errors=59 current=libs/commands/exec/src/lib/exec-command.spec.ts
+[2026-04-17T14:27:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.2 files_done=3 resolved=6 errors=126 current=libs/commands/publish/src/lib/publish-command.spec.ts
+[2026-04-17T14:29:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.7 files_done=4 resolved=15 errors=255 current=libs/test-helpers/__mocks__/@lerna/core/collect-project-updates.ts
+[2026-04-17T14:30:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.4 files_done=6 resolved=23 errors=314 current=e2e/version/src/conventional-commits.spec.ts
+[2026-04-17T14:31:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=7 resolved=33 errors=476 current=libs/core/src/lib/map-to-registry.spec.ts
+[2026-04-17T14:33:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.9 files_done=9 resolved=36 errors=625 current=libs/commands/version/src/lib/prompt-version.spec.ts
+[2026-04-17T14:34:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.7 files_done=12 resolved=38 errors=693 current=libs/core/src/lib/command/create-project-graph-with-packages.spec.ts
+[2026-04-17T14:35:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.5 files_done=14 resolved=46 errors=767 current=libs/core/src/lib/listable-options.spec.ts
+[2026-04-17T14:35:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=17 resolved=55 errors=830 current=libs/commands/version/src/index.ts
+[2026-04-17T14:38:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.6 files_done=18 resolved=67 errors=1033 current=libs/core/src/lib/run-projects-topologically.ts
+[2026-04-17T14:39:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.4 files_done=20 resolved=80 errors=1107 current=libs/commands/version/src/lib/version-bump.spec.ts
+[2026-04-17T14:42:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.1 files_done=22 resolved=83 errors=1432 current=libs/core/src/lib/project/shallow-extend.ts
+[2026-04-17T14:44:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.8 files_done=24 resolved=87 errors=1579 current=libs/commands/changed/src/command.ts
+[2026-04-17T14:45:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.1 files_done=26 resolved=94 errors=1700 current=libs/core/src/lib/npm-publish.spec.ts
+[2026-04-17T14:47:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.9 files_done=28 resolved=96 errors=1856 current=libs/core/src/lib/npmlog/gauge/tests/theme-set.spec.ts
+[2026-04-17T14:48:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.5 files_done=29 resolved=96 errors=1902 current=libs/core/src/lib/npm-install.spec.ts
+[2026-04-17T14:48:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.1 files_done=31 resolved=103 errors=1961 current=libs/commands/import/src/lib/import-command.spec.ts
+[2026-04-17T14:50:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.3 files_done=32 resolved=106 errors=2157 current=e2e/publish/src/publish-private-packages.spec.ts
+[2026-04-17T14:52:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.5 files_done=33 resolved=108 errors=2257 current=e2e/init/src/init-npm.spec.ts
+[2026-04-17T14:52:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.1 files_done=35 resolved=118 errors=2310 current=libs/commands/publish/src/lib/publish-from-package.spec.ts
+[2026-04-17T14:53:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.6 files_done=36 resolved=126 errors=2358 current=libs/commands/list/src/lib/list-command.spec.ts
+[2026-04-17T14:54:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.6 files_done=37 resolved=128 errors=2446 current=e2e/create/src/create.spec.ts
+[2026-04-17T14:55:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.7 files_done=38 resolved=128 errors=2537 current=e2e/version/src/build-metadata.spec.ts
+[2026-04-17T14:55:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.2 files_done=39 resolved=136 errors=2582 current=libs/core/src/lib/npmlog/gauge/render-template.ts
+[2026-04-17T14:56:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.7 files_done=40 resolved=142 errors=2629 current=libs/child-process/src/forked-strong-log-transformer.spec.ts
+[2026-04-17T14:57:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.3 files_done=41 resolved=144 errors=2767 current=libs/core/src/lib/otplease.spec.ts
+[2026-04-17T14:58:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.2 files_done=43 resolved=150 errors=2851 current=libs/commands/publish/src/lib/get-npm-username.spec.ts
+[2026-04-17T14:59:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.1 files_done=46 resolved=156 errors=2925 current=libs/commands/version/src/lib/is-anything-committed.ts
+[2026-04-17T15:01:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.4 files_done=49 resolved=187 errors=3043 current=libs/core/src/lib/prerelease-id-from-version.spec.ts
+[2026-04-17T15:01:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.0 files_done=53 resolved=187 errors=3092 current=e2e/version/src/positional-arguments.spec.ts
+[2026-04-17T15:02:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.6 files_done=55 resolved=188 errors=3145 current=packages/lerna/src/commands/publish/index.ts
+[2026-04-17T15:02:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.2 files_done=59 resolved=197 errors=3199 current=libs/commands/publish/src/lib/publish-tagging.spec.ts
+[2026-04-17T15:04:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.5 files_done=61 resolved=199 errors=3318 current=libs/core/src/lib/conventional-commits/index.spec.ts
+[2026-04-17T15:07:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.3 files_done=62 resolved=220 errors=3648 current=libs/core/src/lib/npm-conf/index.spec.ts
+[2026-04-17T15:10:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.6 files_done=64 resolved=229 errors=3853 current=libs/core/src/lib/__tests__/multimatch.spec.ts
+[2026-04-17T15:10:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.3 files_done=65 resolved=229 errors=3914 current=libs/commands/create/src/index.ts
+[2026-04-17T15:12:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.6 files_done=66 resolved=246 errors=4029 current=libs/core/src/lib/project/index.spec.ts
+[2026-04-17T15:13:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.4 files_done=67 resolved=246 errors=4101 current=e2e/run/task-runner/src/incompatible-options/assertions.spec.ts
+[2026-04-17T15:13:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.1 files_done=69 resolved=249 errors=4156 current=libs/core/src/lib/npmlog/gauge/themes.ts
+[2026-04-17T15:14:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.0 files_done=73 resolved=251 errors=4237 current=libs/core/src/lib/conventional-commits/update-changelog.ts
+[2026-04-17T15:15:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.7 files_done=75 resolved=265 errors=4295 current=integration/__tests__/lerna-publish-build-metadata.spec.ts
+[2026-04-17T15:16:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.3 files_done=77 resolved=269 errors=4436 current=libs/core/src/lib/npmlog/gauge/tests/index.spec.ts
+[2026-04-17T15:18:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.4 files_done=79 resolved=272 errors=4538 current=libs/commands/changed/src/lib/changed-command.spec.ts
+[2026-04-17T15:19:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.4 files_done=81 resolved=273 errors=4625 current=e2e/run/task-runner/src/task-runner/assertions.spec.ts
+[2026-04-17T15:19:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.9 files_done=83 resolved=273 errors=4670 current=integration/__tests__/lerna-publish-conventional-fixed-prerelease.spec.ts
+[2026-04-17T15:20:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.8 files_done=85 resolved=280 errors=4745 current=tools/scripts/lerna-release.ts
+[2026-04-17T15:21:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.6 files_done=87 resolved=283 errors=4819 current=libs/core/src/lib/collect-uncommitted.spec.ts
+[2026-04-17T15:21:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.1 files_done=88 resolved=283 errors=4863 current=e2e/clean/src/clean.spec.ts
+[2026-04-17T15:25:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.2 files_done=91 resolved=297 errors=5217 current=e2e/run/legacy-task-runner/src/run-legacy-task-runner.spec.ts
+[2026-04-17T15:26:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.9 files_done=93 resolved=297 errors=5285 current=libs/core/src/lib/npmlog/are-we-there-yet/tests/tracker-stream.spec.ts
+[2026-04-17T15:27:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.3 files_done=96 resolved=299 errors=5407 current=libs/commands/clean/src/lib/clean-command.spec.ts
+[2026-04-17T15:28:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.9 files_done=98 resolved=301 errors=5459 current=libs/commands/version/src/lib/version-lifecycle-scripts.spec.ts
+[2026-04-17T15:30:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.0 files_done=100 resolved=302 errors=5641 current=libs/commands/publish/src/lib/create-temp-licenses.spec.ts
+[2026-04-17T15:31:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.8 files_done=102 resolved=305 errors=5709 current=libs/commands/version/src/lib/version-bump-prerelease.spec.ts
+[2026-04-17T15:32:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.7 files_done=103 resolved=306 errors=5788 current=libs/core/src/lib/temp-write.spec.ts
+[2026-04-17T15:34:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.4 files_done=105 resolved=310 errors=5938 current=libs/core/src/lib/add-dependencies.spec.ts
+[2026-04-17T15:34:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.9 files_done=106 resolved=310 errors=5984 current=libs/commands/publish/src/lib/get-two-factor-auth-required.spec.ts
+[2026-04-17T15:35:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.8 files_done=110 resolved=319 errors=6065 current=libs/core/src/lib/project/apply-extends.ts
+[2026-04-17T15:36:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.6 files_done=113 resolved=320 errors=6126 current=libs/commands/version/src/lib/create-release.spec.ts
+[2026-04-17T15:36:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.1 files_done=115 resolved=322 errors=6178 current=libs/core/src/lib/npmlog/gauge/plumbing.ts
+[2026-04-17T15:37:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.7 files_done=118 resolved=324 errors=6223 current=e2e/init/src/init-pnpm.spec.ts
+[2026-04-17T15:37:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.2 files_done=121 resolved=328 errors=6272 current=libs/child-process/src/child-process.spec.ts
+[2026-04-17T15:38:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.3 files_done=124 resolved=336 errors=6362 current=libs/commands/import/src/index.ts
+[2026-04-17T15:39:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.2 files_done=125 resolved=337 errors=6443 current=libs/core/src/lib/npmlog/gauge/wide-truncate.ts
+[2026-04-17T15:40:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.8 files_done=128 resolved=337 errors=6499 current=libs/nx-plugin/src/generators/e2e-project/generator.ts
+[2026-04-17T15:41:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.6 files_done=130 resolved=338 errors=6565 current=libs/core/src/lib/run-lifecycle.spec.ts
+[2026-04-17T15:41:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.1 files_done=134 resolved=342 errors=6608 current=libs/core/src/lib/write-package.ts
+[2026-04-17T15:42:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.6 files_done=138 resolved=356 errors=6654 current=libs/commands/run/src/index.ts
+[2026-04-17T15:43:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.5 files_done=139 resolved=363 errors=6731 current=libs/core/src/lib/npm-publish.ts
+[2026-04-17T15:43:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.3 files_done=144 resolved=373 errors=6796 current=libs/core/src/lib/package.spec.ts
+[2026-04-17T15:44:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.9 files_done=145 resolved=377 errors=6852 current=e2e/version/src/npm-client-args.spec.ts
+[2026-04-17T15:45:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.7 files_done=149 resolved=377 errors=6917 current=libs/commands/version/src/lib/version-message.spec.ts
+[2026-04-17T15:45:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.2 files_done=151 resolved=379 errors=6961 current=e2e/publish/src/publish-npm-workspace-prefix.spec.ts
+[2026-04-17T15:46:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.0 files_done=153 resolved=383 errors=7031 current=e2e/changed/src/changed.spec.ts
+[2026-04-17T15:47:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.7 files_done=154 resolved=383 errors=7100 current=libs/core/src/lib/command/create-project-graph-with-packages.ts
+[2026-04-17T15:47:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.3 files_done=156 resolved=391 errors=7150 current=libs/core/src/lib/cycles/merge-overlapping-cycles.spec.ts
+[2026-04-17T15:48:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.8 files_done=159 resolved=394 errors=7194 current=e2e/publish/src/publish-npm.spec.ts
+[2026-04-17T15:49:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.4 files_done=162 resolved=396 errors=7242 current=libs/core/src/lib/__tests__/write-package.spec.ts
+[2026-04-17T15:49:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.1 files_done=164 resolved=408 errors=7309 current=libs/core/src/lib/project-graph-with-packages.spec.ts
+[2026-04-17T15:50:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.8 files_done=167 resolved=426 errors=7367 current=e2e/list/src/list.spec.ts
+[2026-04-17T15:50:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.3 files_done=171 resolved=426 errors=7413 current=libs/core/src/lib/npmlog/gauge/tests/themes.spec.ts
+[2026-04-17T15:51:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.9 files_done=174 resolved=429 errors=7463 current=integration/__tests__/lerna-publish-validation.spec.ts
+[2026-04-17T15:52:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.5 files_done=177 resolved=432 errors=7516 current=libs/core/src/lib/otplease.ts
+[2026-04-17T15:52:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.1 files_done=182 resolved=437 errors=7562 current=libs/core/src/lib/npm-conf/defaults.ts
+[2026-04-17T15:53:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.6 files_done=184 resolved=438 errors=7611 current=libs/core/src/lib/npmlog/index.ts
+[2026-04-17T15:54:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.6 files_done=185 resolved=447 errors=7696 current=libs/core/src/lib/npm-install.ts
+[2026-04-17T15:54:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.2 files_done=187 resolved=461 errors=7747 current=libs/commands/publish/src/lib/get-projects-with-unpublished-packages.spec.ts
+[2026-04-17T15:55:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.7 files_done=190 resolved=476 errors=7795 current=libs/test-helpers/src/lib/cli.ts
+[2026-04-17T15:55:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.3 files_done=195 resolved=483 errors=7842 current=libs/commands/version/src/lib/version-allow-branch.spec.ts
+[2026-04-17T15:56:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.1 files_done=198 resolved=487 errors=7916 current=libs/commands/version/src/lib/git-push.ts
+[2026-04-17T15:57:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.7 files_done=200 resolved=489 errors=7962 current=integration/__tests__/lerna-publish-conventional-fixed.spec.ts
+[2026-04-17T15:57:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.3 files_done=203 resolved=494 errors=8020 current=libs/core/src/lib/conventional-commits/get-changelog-config.ts
+[2026-04-17T15:59:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.5 files_done=206 resolved=502 errors=8119 current=e2e/version/src/independent-pnpm.spec.ts
+[2026-04-17T15:59:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.0 files_done=209 resolved=506 errors=8167 current=e2e/run/legacy-task-runner/src/include-dependencies.spec.ts
+[2026-04-17T16:00:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.7 files_done=213 resolved=509 errors=8228 current=libs/commands/publish/src/lib/interpolate.ts
+[2026-04-17T16:00:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.3 files_done=218 resolved=514 errors=8276 current=libs/commands/exec/src/index.ts
+[2026-04-17T16:01:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.0 files_done=221 resolved=518 errors=8335 current=libs/commands/publish/src/lib/get-packages-without-license.ts
+[2026-04-17T16:02:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.5 files_done=225 resolved=521 errors=8379 current=packages/lerna/src/commands/repair/index.ts
+[2026-04-17T16:02:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.0 files_done=228 resolved=524 errors=8423 current=libs/core/src/lib/filter-projects.ts
+[2026-04-17T16:03:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.5 files_done=232 resolved=532 errors=8467 current=libs/core/src/lib/npmlog/gauge/progress-bar.ts
+[2026-04-17T16:03:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.1 files_done=236 resolved=534 errors=8520 current=libs/commands/version/src/lib/git-add.spec.ts
+[2026-04-17T16:04:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.7 files_done=238 resolved=543 errors=8575 current=libs/commands/publish/src/lib/create-temp-licenses.ts
+[2026-04-17T16:04:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.3 files_done=241 resolved=544 errors=8619 current=e2e/run/task-runner/src/multiple-targets/init.ts
+[2026-04-17T16:05:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.8 files_done=248 resolved=566 errors=8663 current=libs/commands/info/src/command.ts
+[2026-04-17T16:06:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.4 files_done=255 resolved=569 errors=8716 current=libs/core/src/lib/project/make-file-finder.ts
+[2026-04-17T16:07:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.5 files_done=258 resolved=582 errors=8813 current=e2e/run/task-runner/src/with-nx-config/assertions.spec.ts
+[2026-04-17T16:08:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.3 files_done=262 resolved=595 errors=8885 current=libs/test-helpers/__mocks__/@lerna/core/conventional-commits.ts
+[2026-04-17T16:08:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.9 files_done=272 resolved=602 errors=8926 current=libs/commands/version/src/lib/prompt-version.ts
+[2026-04-17T16:09:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.8 files_done=276 resolved=610 errors=9009 current=libs/test-helpers/__mocks__/@lerna/core/output.ts
+[2026-04-17T16:10:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.8 files_done=284 resolved=615 errors=9092 current=libs/commands/version/src/lib/version-ignore-changes.spec.ts
+[2026-04-17T16:11:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.5 files_done=286 resolved=616 errors=9151 current=packages/lerna/src/migrations/remove-unnecessary-use-nx/remove-unnecessary-use-nx.test.ts
+[2026-04-17T16:11:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.0 files_done=296 resolved=621 errors=9194 current=libs/core/src/lib/npm-conf/config-chain/tests/chain-class.spec.ts
+[2026-04-17T16:12:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.5 files_done=301 resolved=623 errors=9240 current=libs/commands/clean/src/index.ts
+[2026-04-17T16:12:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.1 files_done=304 resolved=626 errors=9292 current=libs/nx-plugin/src/generators/e2e-project/generator.spec.ts
+[2026-04-17T16:13:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.8 files_done=315 resolved=632 errors=9352 current=libs/core/src/lib/pulse-till-done.ts
+[2026-04-17T16:14:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.3 files_done=320 resolved=636 errors=9396 current=libs/core/src/lib/scm-clients/gitlab/gitlab-client.ts
+[2026-04-17T16:14:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.9 files_done=328 resolved=643 errors=9444 current=e2e/run/task-runner/src/incompatible-options-without-nx-json/init.ts
+[2026-04-17T16:15:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.4 files_done=337 resolved=649 errors=9487 current=integration/__tests__/lerna-publish-error.spec.ts
+[2026-04-17T16:15:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.0 files_done=342 resolved=651 errors=9535 current=libs/core/src/lib/write-log-file.ts
+[2026-04-17T16:16:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.5 files_done=346 resolved=652 errors=9582 current=libs/commands/publish/src/command.ts
+[2026-04-17T16:16:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.1 files_done=351 resolved=655 errors=9630 current=tools/scripts/set-e2e-root.ts
+[2026-04-17T16:17:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.6 files_done=362 resolved=668 errors=9673 current=e2e/init/src/init-yarn.spec.ts
+[2026-04-17T16:17:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.1 files_done=371 resolved=669 errors=9717 current=libs/core/src/lib/log-packed.spec.ts
+[2026-04-17T16:18:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.7 files_done=380 resolved=671 errors=9765 current=e2e/run/task-runner/src/env-files/init.ts
+[2026-04-17T16:18:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.3 files_done=390 resolved=674 errors=9812 current=libs/core/src/lib/corepack/exec-package-manager.ts
+[2026-04-17T16:19:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.8 files_done=400 resolved=674 errors=9854 current=e2e/run/task-runner/src/include-dependencies-with-target-config-in-package-json/init.ts
+[2026-04-17T16:20:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.4 files_done=412 resolved=678 errors=9901 current=libs/core/src/lib/project-graph-with-packages.ts
+[2026-04-17T16:20:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.9 files_done=427 resolved=681 errors=9942 current=libs/core/src/lib/npmlog/gauge/has-color.ts
+[2026-04-17T16:21:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.4 files_done=473 resolved=682 errors=9981 current=integration/__tests__/__fixtures__/exec-test.js
+[2026-04-17T16:21:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.0 files_done=478 resolved=686 errors=10029 current=libs/core/src/lib/conventional-commits/__fixtures__/fixed/scripts/local-preset.js
+[2026-04-17T16:22:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.5 files_done=494 resolved=694 errors=10069 current=libs/test-helpers/src/lib/silence-logging.js
+[2026-04-17T16:22:14Z] [iter=1] Target type resolved target_type=call_site resolved=695 errors=10073 secs=6951 mem_mb=919 MB
+[2026-04-17T16:22:14Z] [iter=1] Resolving target type target_type=import_statement count=1201
+[2026-04-17T16:23:01Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=118.4 files_done=283 resolved=301 errors=0 current=libs/core/src/lib/npm-run-script.spec.ts
+[2026-04-17T16:23:24Z] [iter=1] Target type resolved target_type=import_statement resolved=388 errors=0 secs=70 mem_mb=919 MB
+[2026-04-17T16:23:24Z] [iter=1] Resolving target type target_type=extends_clause count=47
+[2026-04-17T16:23:31Z] [iter=1] HEARTBEAT target_type=extends_clause elapsed_min=118.9 files_done=23 resolved=38 errors=0 current=libs/commands/init/src/index.ts
+[2026-04-17T16:23:32Z] [iter=1] Target type resolved target_type=extends_clause resolved=47 errors=0 secs=8 mem_mb=919 MB
+[2026-04-17T16:23:32Z] [iter=1] Resolving target type target_type=implements_clause count=1
+[2026-04-17T16:23:34Z] [iter=1] Target type resolved target_type=implements_clause resolved=1 errors=0 secs=2 mem_mb=919 MB
+[2026-04-17T16:23:46Z] [iter=1] Step 5: Writing final enrichment file triples=146619
+[2026-04-17T16:23:49Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/4322536e385c067afe743c089430dd5cfe35d010.nq.gz size_kb=3624
+[2026-04-17T16:23:49Z] [iter=1] PHASE END: enrich elapsed_s=7150 elapsed_min=119.2 total_triples=146619
